@@ -51,6 +51,10 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
 /* FINAL PARROT FOREGROUND */
 .parrot-flight{z-index:12!important;left:-48%;right:auto!important;bottom:2px!important;width:clamp(340px,52vw,700px)!important;height:clamp(190px,28vw,360px)!important;overflow:visible!important;clip-path:none!important;filter:drop-shadow(0 13px 10px rgba(0,0,0,.38))!important;animation:parrotZip 7.5s cubic-bezier(.23,.71,.31,1) infinite!important;pointer-events:none}.parrot-flight img{width:100%;height:100%;object-fit:contain!important;object-position:center!important;filter:saturate(1.12) contrast(1.04)!important}.parrot-flight:after,.parrot-flight span{display:none!important}@keyframes parrotZip{0%,9%{transform:translateX(-18%) translateY(8px) rotate(-2deg);opacity:0}13%{opacity:1}48%,67%{transform:translateX(147vw) translateY(-8px) rotate(2deg);opacity:1}73%,100%{transform:translateX(155vw) translateY(-10px) rotate(2deg);opacity:0}}.conveyor{z-index:4}.conveyor-track{position:relative;z-index:4}.bird-note{z-index:13!important;bottom:48px!important;left:23px;right:auto!important;writing-mode:initial!important}@media(max-width:760px){.parrot-flight{left:-92%!important;bottom:6px!important;width:480px!important;height:250px!important;animation-duration:6.6s!important}.bird-note{bottom:44px!important;left:19px!important;font-size:9px!important}}
 
+
+/* REALISTIC RUNNING BIRD - BOTTOM FOREGROUND */
+.runner-flight{z-index:12!important;left:-42%;right:auto!important;bottom:-6px!important;width:clamp(350px,52vw,720px)!important;height:clamp(200px,30vw,390px)!important;overflow:visible!important;clip-path:none!important;filter:drop-shadow(0 14px 9px rgba(0,0,0,.4))!important;animation:runnerDash 7.2s cubic-bezier(.21,.7,.32,1) infinite!important;pointer-events:none}.runner-flight img{width:100%;height:100%;object-fit:contain!important;object-position:center bottom!important;filter:saturate(1.1) contrast(1.04)!important}.runner-flight:after,.runner-flight span{display:none!important}@keyframes runnerDash{0%,8%{transform:translateX(-14%) translateY(1px);opacity:0}12%{opacity:1}48%{transform:translateX(128vw) translateY(-4px);opacity:1}53%{transform:translateX(134vw) translateY(0);opacity:0}100%{transform:translateX(134vw) translateY(0);opacity:0}}.conveyor{z-index:4!important}.bird-note{z-index:13!important;bottom:44px!important;left:22px;right:auto!important;writing-mode:initial!important}@media(max-width:760px){.runner-flight{left:-105%!important;bottom:-1px!important;width:520px!important;height:286px!important;animation-duration:6.2s!important}.bird-note{bottom:38px!important;left:19px!important;font-size:9px!important}}
+
 </style>
 </head>
 <body>
@@ -70,7 +74,7 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
     <p class="hero-text">A marketplace for the good stuff. Clothes, jewelry, purses, games, and whatever somebody else has been looking for.</p>
     <div class="hero-buttons"><button class="primary-btn" data-action="sell">Start selling <span>↗</span></button><button class="ghost-btn" data-action="explore">See what is moving ↓</button></div>
   </div>
-  <div class="bird-flight parrot-flight" aria-hidden="true"><img src="assets/parrot.jpg" alt="" /></div>
+  <div class="bird-flight runner-flight" aria-hidden="true"><img src="assets/running-bird.webp" alt="" /></div>
   <p class="bird-note">Everything moves here.</p>
   <div class="conveyor" aria-hidden="true"><div class="conveyor-track"><div class="conveyor-run">
     <article class="moving-item"><img src="assets/closet.jpg" alt="" /><b>STYLE</b></article>
