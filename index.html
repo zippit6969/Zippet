@@ -55,6 +55,10 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
 /* REALISTIC RUNNING BIRD - BOTTOM FOREGROUND */
 .runner-flight{z-index:12!important;left:-42%;right:auto!important;bottom:-6px!important;width:clamp(350px,52vw,720px)!important;height:clamp(200px,30vw,390px)!important;overflow:visible!important;clip-path:none!important;filter:drop-shadow(0 14px 9px rgba(0,0,0,.4))!important;animation:runnerDash 7.2s cubic-bezier(.21,.7,.32,1) infinite!important;pointer-events:none}.runner-flight img{width:100%;height:100%;object-fit:contain!important;object-position:center bottom!important;filter:saturate(1.1) contrast(1.04)!important}.runner-flight:after,.runner-flight span{display:none!important}@keyframes runnerDash{0%,8%{transform:translateX(-14%) translateY(1px);opacity:0}12%{opacity:1}48%{transform:translateX(128vw) translateY(-4px);opacity:1}53%{transform:translateX(134vw) translateY(0);opacity:0}100%{transform:translateX(134vw) translateY(0);opacity:0}}.conveyor{z-index:4!important}.bird-note{z-index:13!important;bottom:44px!important;left:22px;right:auto!important;writing-mode:initial!important}@media(max-width:760px){.runner-flight{left:-105%!important;bottom:-1px!important;width:520px!important;height:286px!important;animation-duration:6.2s!important}.bird-note{bottom:38px!important;left:19px!important;font-size:9px!important}}
 
+
+/* THREE-BIRD RUNNING FLOCK */
+.bird-flock{position:absolute;inset:0;z-index:12;pointer-events:none}.bird-flock .runner-flight{z-index:12!important}.flock-one{animation-delay:0s!important}.flock-two{animation-delay:-2.25s!important;transform:scale(.72)!important;filter:drop-shadow(0 10px 7px rgba(0,0,0,.36)) saturate(.94)!important}.flock-three{animation-delay:-4.5s!important;transform:scale(.51)!important;filter:drop-shadow(0 8px 6px rgba(0,0,0,.3)) saturate(.84)!important}@media(max-width:760px){.flock-two{transform:scale(.64)!important}.flock-three{transform:scale(.45)!important}}
+
 </style>
 </head>
 <body>
@@ -74,7 +78,11 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
     <p class="hero-text">A marketplace for the good stuff. Clothes, jewelry, purses, games, and whatever somebody else has been looking for.</p>
     <div class="hero-buttons"><button class="primary-btn" data-action="sell">Start selling <span>↗</span></button><button class="ghost-btn" data-action="explore">See what is moving ↓</button></div>
   </div>
-  <div class="bird-flight runner-flight" aria-hidden="true"><img src="assets/running-bird.webp" alt="" /></div>
+  <div class="bird-flock" aria-hidden="true">
+  <div class="bird-flight runner-flight flock-one"><img src="assets/running-bird.webp" alt="" /></div>
+  <div class="bird-flight runner-flight flock-two"><img src="assets/running-bird.webp" alt="" /></div>
+  <div class="bird-flight runner-flight flock-three"><img src="assets/running-bird.webp" alt="" /></div>
+</div>
   <p class="bird-note">Everything moves here.</p>
   <div class="conveyor" aria-hidden="true"><div class="conveyor-track"><div class="conveyor-run">
     <article class="moving-item"><img src="assets/closet.jpg" alt="" /><b>STYLE</b></article>
