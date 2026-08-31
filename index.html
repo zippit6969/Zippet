@@ -111,6 +111,10 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
 
 /* FIRST-PAGE REFERRAL OFFER */
 .referral-offer{margin-top:22px;max-width:490px;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 13px 12px 16px;border:1px solid #a9d3e7;border-radius:16px;background:rgba(255,255,255,.78);box-shadow:0 8px 20px rgba(38,113,150,.11);backdrop-filter:blur(7px)}.referral-offer>div{display:grid;gap:3px}.referral-kicker{font:700 9px Arial,sans-serif;letter-spacing:.14em;color:#268fca}.referral-offer strong{font:700 16px/1.1 Georgia,"Times New Roman",serif;color:#173957}.referral-offer strong b{color:#1685bd}.referral-offer small{font:12px/1.2 Arial,sans-serif;color:#52758b;max-width:285px}.referral-share{flex:0 0 auto;border:0;border-radius:999px;background:#173957;color:#fff;padding:11px 13px;font:700 12px Arial,sans-serif;box-shadow:0 4px 10px rgba(23,57,87,.2)}.referral-share span{font-size:16px}.referral-share:active{transform:translateY(2px);box-shadow:none}@media(max-width:760px){.referral-offer{margin-top:18px;padding:11px 10px 11px 13px;gap:10px}.referral-offer strong{font-size:15px}.referral-offer small{font-size:11px;max-width:200px}.referral-share{padding:10px;font-size:11px}}
+
+/* CLEAN HERO ITEM PICKS: PRODUCTS BACK, NO CARTONS */
+.real-item-stream{display:block!important;position:absolute!important;inset:auto 0 18px 0!important;height:clamp(185px,26vw,280px)!important;z-index:9!important;pointer-events:none!important;overflow:hidden!important}.real-item{position:absolute!important;display:block!important;filter:drop-shadow(0 9px 9px rgba(35,83,105,.18))!important;animation:realItemDrift 12s ease-in-out infinite!important}.real-item img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}.real-purse{left:48%!important;width:clamp(110px,14vw,192px)!important;height:clamp(132px,17vw,235px)!important;bottom:18px!important}.real-necklace{left:63%!important;width:clamp(58px,7vw,96px)!important;height:clamp(125px,17vw,235px)!important;bottom:40px!important;animation-delay:-3s!important}.real-jacket{left:71%!important;width:clamp(110px,14vw,200px)!important;height:clamp(135px,18vw,245px)!important;bottom:13px!important;animation-delay:-6s!important}.real-purse-two,.real-necklace-two{display:none!important}@media(max-width:760px){.real-item-stream{height:235px!important;bottom:28px!important}.real-purse{left:37%!important;width:124px!important;height:156px!important;bottom:28px!important}.real-necklace{left:58%!important;width:64px!important;height:164px!important;bottom:55px!important}.real-jacket{left:66%!important;width:122px!important;height:166px!important;bottom:20px!important}}
+
 </style>
 </head>
 <body>
@@ -131,6 +135,11 @@ body{font-family:Georgia,"Times New Roman",serif;background:var(--paper)}
     <div class="hero-buttons"><button class="primary-btn" data-action="sell">Start selling <span>↗</span></button><button class="ghost-btn" data-action="explore">See what is moving ↓</button></div>
   </div>
   
+  <div class="real-item-stream" aria-hidden="true">
+    <div class="real-item real-purse"><img src="assets/hero-items/pastel-purse.webp" alt="" /></div>
+    <div class="real-item real-necklace"><img src="assets/hero-items/silver-necklace.webp" alt="" /></div>
+    <div class="real-item real-jacket"><img src="assets/hero-items/mint-jacket.webp" alt="" /></div>
+  </div>
   <div class="puffball-pack" aria-hidden="true">
   <div class="puffball-runner puff-one"><img class="puff-push" src="assets/ziggy-cart-push/ziggy-pushing-cart.webp" alt="" /></div>
   <div class="puffball-runner puff-two"><img class="puff-push" src="assets/ziggy-cart-push/ziggy-pushing-cart.webp" alt="" /></div>
